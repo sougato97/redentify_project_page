@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking Strategies for Unstructured Data</title>
+    <meta
+      name="description"
+      content="A project homepage focused on designing ranking strategies for large-scale unstructured data."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-theme="light">
+    <div class="page-shell">
+      <header class="floating-nav">
+        <div class="brand-lockup">
+          <span class="brand-mark"></span>
+          <span class="brand-copy">
+            <span class="brand-name">redentify.work</span>
+            <span class="brand-role">A project on ranking strategies, retrieval behavior, and evidence-first search</span>
+          </span>
+        </div>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="icon-button" aria-label="Toggle theme">◐</button>
+          <a class="ghost-button" href="https://sougato97.github.io" target="_blank" rel="noreferrer">Meet Sougato</a>
+        </div>
+      </header>
+
+      <main class="main-stage">
+        <section class="landing-hero">
+          <p class="eyebrow">Project direction</p>
+          <h1 class="hero-brand">Designing ranking strategies for unstructured data.</h1>
+          <p class="hero-support">
+            This project explores how indexing, retrieval, and reranking should behave when the evidence is long-form,
+            heterogeneous, noisy, and hard to compare directly, while the underlying architecture stays stable even as
+            data volume changes.
+          </p>
+
+          <div class="hero-panels">
+            <article class="hero-card">
+              <h2>Keep the architecture invariant</h2>
+              <p>
+                Scaling laws should change throughput assumptions, not the logical shape of the system. The ranking
+                architecture should preserve its evidence model, retrieval behavior, and decision rules as the corpus
+                grows.
+              </p>
+            </article>
+            <article class="hero-card accent-card">
+              <h2>Draw a definite math boundary</h2>
+              <p>
+                The system should have a deterministic core where ranking math, constraints, and knowledge structure
+                are explicit. LLMs can help around that boundary, but they should not erase it.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="block-grid">
+          <article class="panel block-card">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Block 01</p>
+                <h2>Architecture before scale</h2>
+              </div>
+              <span class="hint-pill">invariant core</span>
+            </div>
+            <p>
+              A good ranking system should not need to reinvent its logic every time the corpus becomes larger. Scaling
+              changes latency, storage, and indexing pressure, but the architecture should keep a stable contract for
+              evidence, retrieval, and scoring.
+            </p>
+          </article>
+
+          <article class="panel block-card">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Block 02</p>
+                <h2>Deterministic boundary</h2>
+              </div>
+              <span class="hint-pill">math first</span>
+            </div>
+            <p>
+              There should be a definite mathematical boundary for what the system can prove, rank, and connect. This
+              boundary turns the knowledge base into something inspectable instead of letting every decision collapse
+              into opaque generation.
+            </p>
+          </article>
+
+          <article class="panel block-card">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Block 03</p>
+                <h2>LLMs link the unknowns</h2>
+              </div>
+              <span class="hint-pill">periodic improvement</span>
+            </div>
+            <p>
+              Unsupervised data can be linked back into the definite knowledge base with LLM assistance, then reviewed,
+              absorbed, and periodically improved. The model expands coverage, but the knowledge base remains the
+              stable reference frame.
+            </p>
+          </article>
+        </section>
+
+        <section class="closing-panel panel">
+          <p class="eyebrow">Core question</p>
+          <h2>How do you keep ranking grounded when the data is messy and always expanding?</h2>
+          <p>
+            The project sits at the intersection of a stable ranking architecture, a deterministic mathematical
+            boundary, and an LLM-assisted loop that keeps linking new unsupervised evidence back into a structured
+            knowledge base over time.
+          </p>
+          <p class="release-note">
+            The full project will be released publicly once the architecture and system behavior are fully developed.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Project focus: ranking strategies on unstructured data.</p>
+        <p><span id="year"></span> Sougato Bagchi</p>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
