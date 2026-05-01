@@ -23,7 +23,7 @@
           <span class="brand-mark"></span>
           <span class="brand-copy">
             <span class="brand-name">redentify.work</span>
-            <span class="brand-role">A project on ranking strategies, retrieval behavior, and evidence-first search</span>
+            <span class="brand-role">Ranking unstructured data with a stable knowledge base</span>
           </span>
         </div>
 
@@ -38,87 +38,66 @@
           <p class="eyebrow">Project direction</p>
           <h1 class="hero-brand">Designing ranking strategies for unstructured data.</h1>
           <p class="hero-support">
-            This project explores how indexing, retrieval, and reranking should behave when the evidence is long-form,
-            heterogeneous, noisy, and hard to compare directly, while the underlying architecture stays stable even as
-            data volume changes.
+            The goal is simple: keep the ranking architecture stable as data grows. New unstructured data is mapped to
+            a defined knowledge base, then improved over time.
           </p>
 
           <div class="hero-panels">
             <article class="hero-card">
-              <h2>Keep the architecture invariant</h2>
+              <h2>Stable by design</h2>
               <p>
-                Scaling laws should change throughput assumptions, not the logical shape of the system. The ranking
-                architecture should preserve its evidence model, retrieval behavior, and decision rules as the corpus
-                grows.
+                More data should not change the core logic. Scale can increase storage and compute pressure, but the
+                evidence model and ranking rules should stay clear.
               </p>
             </article>
             <article class="hero-card accent-card">
-              <h2>Draw a definite math boundary</h2>
+              <h2>Math before generation</h2>
               <p>
-                The system should have a deterministic core where ranking math, constraints, and knowledge structure
-                are explicit. LLMs can help around that boundary, but they should not erase it.
+                The system has a defined boundary for what it can rank and connect. LLMs help link unknown data to that
+                boundary, but they do not replace it.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="block-grid">
-          <article class="panel block-card">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Block 01</p>
-                <h2>Architecture before scale</h2>
-              </div>
-              <span class="hint-pill">invariant core</span>
-            </div>
-            <p>
-              A good ranking system should not need to reinvent its logic every time the corpus becomes larger. Scaling
-              changes latency, storage, and indexing pressure, but the architecture should keep a stable contract for
-              evidence, retrieval, and scoring.
-            </p>
-          </article>
+        <section class="closing-panel">
+          <p class="eyebrow">Project loop</p>
+          <h2>Math defines the boundary. Feedback improves the system.</h2>
 
-          <article class="panel block-card">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Block 02</p>
-                <h2>Deterministic boundary</h2>
-              </div>
-              <span class="hint-pill">math first</span>
-            </div>
-            <p>
-              There should be a definite mathematical boundary for what the system can prove, rank, and connect. This
-              boundary turns the knowledge base into something inspectable instead of letting every decision collapse
-              into opaque generation.
-            </p>
-          </article>
+          <div class="flow-chart" aria-label="Project flow">
+            <article class="flow-step">
+              <span class="step-number">01</span>
+              <h3>Math boundary</h3>
+              <p>Define what the system can rank, connect, and verify before the first hard data pass.</p>
+            </article>
 
-          <article class="panel block-card">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Block 03</p>
-                <h2>LLMs link the unknowns</h2>
-              </div>
-              <span class="hint-pill">periodic improvement</span>
-            </div>
-            <p>
-              Unsupervised data can be linked back into the definite knowledge base with LLM assistance, then reviewed,
-              absorbed, and periodically improved. The model expands coverage, but the knowledge base remains the
-              stable reference frame.
-            </p>
-          </article>
-        </section>
+            <article class="flow-step">
+              <span class="step-number">02</span>
+              <h3>Link unknowns</h3>
+              <p>When unexpected data appears and the knowledge base is stale, LLMs map it to known concepts.</p>
+            </article>
 
-        <section class="closing-panel panel">
-          <p class="eyebrow">Core question</p>
-          <h2>How do you keep ranking grounded when the data is messy and always expanding?</h2>
-          <p>
-            The project sits at the intersection of a stable ranking architecture, a deterministic mathematical
-            boundary, and an LLM-assisted loop that keeps linking new unsupervised evidence back into a structured
-            knowledge base over time.
-          </p>
+            <article class="flow-step">
+              <span class="step-number">03</span>
+              <h3>Relevant results</h3>
+              <p>Generate and rank the most relevant results from the current knowledge base.</p>
+            </article>
+
+            <article class="flow-step">
+              <span class="step-number">04</span>
+              <h3>Human choice</h3>
+              <p>The user chooses the best results. That choice becomes reinforcement for the next loop.</p>
+            </article>
+
+            <article class="flow-step">
+              <span class="step-number">05</span>
+              <h3>Stable scale</h3>
+              <p>The knowledge base improves, while the architecture stays defined as data grows.</p>
+            </article>
+          </div>
+
           <p class="release-note">
-            The full project will be released publicly once the architecture and system behavior are fully developed.
+            The core concepts will be released once planned-scale validation is complete.
           </p>
         </section>
       </main>
